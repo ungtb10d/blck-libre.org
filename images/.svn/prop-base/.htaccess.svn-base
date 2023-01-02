@@ -1,0 +1,11 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 153
+/branches/REL1_15/phase3/images/.htaccess:51646
+/branches/new-installer/phase3/images/.htaccess:43664-66004
+/branches/sqlite/images/.htaccess:58211-58321
+END

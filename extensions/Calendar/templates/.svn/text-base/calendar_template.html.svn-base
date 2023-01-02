@@ -1,0 +1,71 @@
+<!-- 
+  Calendar Template
+	
+	Description:
+    This file represents the template to use for the HTML of the calendar.
+	  The elements of the calendar are defined by this template, wrapped by
+	  comment tags to make it easy to parse.
+	  
+	Comment Tags:
+	  Comment tags, like <!-- hello there -- > are used to represent parse
+	  points for the calendar extension to use.  These must remain in the
+	  template, and must remain the Same Case as they are now.
+	  
+	Author Notes:
+    Written Originally By: Michael Walters
+	    Email: mcw6@aol.com
+		
+    Last Modified by: Eric Fortin 1/10/2009
+		Email: kenyu73@gmail.com
+		
+-->
+<!-- Header Start -->
+<form name='cal_frm' enctype="multipart/form-data" method="post"> <!-- enctype enables uploads -->
+<table class="calendar">
+<tr>
+	<td class="calendarMonthSelect" width="33%">[[PreviousMonthButton]]&nbsp;[[MonthSelect]]&nbsp;[[NextMonthButton]]&nbsp;</td>
+	<td class="calendarTitle" nowrap  width="34%">[[CalendarName]]<br/><font size="-1">[[CalendarMonth]], [[CalendarYear]]</font> </td>
+	<td class="calendarYearSelect" width="33%">[[Views]]&nbsp;[[TodayButton]]&nbsp;[[PreviousYearButton]]&nbsp;[[YearSelect]]&nbsp;[[NextYearButton]]&nbsp;</td>
+</tr>
+</table>
+
+<table class="calendar">
+<!-- Header End -->
+  
+<!-- Heading Start -->
+<tr>
+[[HEADING]]
+</tr>
+<!-- Heading End -->
+	
+<!-- Day Start -->
+<td class="[[mode]] [[wday]]">
+  <table class="calendarTransparent">
+	<tr>
+	  <td class="calendarDayNumber [[dayCustom]]">[[Day]]</td>
+	  <td class="alerts">[[Alert]]</td>
+	  <td class="dayweekyear">[[DayWeekYear]]</td>
+	  <td class="calendarAddEvent">[[AddEvent]]</td>
+	</tr>
+	<tr>
+	  <td colspan="4"><table cellspacing=1 class="calendarEventList">[[EventList]]</table></td>
+	</tr>
+  </table>
+</td>
+<!-- Day End -->
+
+<!-- Missing Start -->
+<td class="daymissing">&nbsp;</td>
+<!-- Missing End -->
+
+<!-- Footer Start -->
+</table>
+<table width=100% border=0><tr>
+<td style="font-size:85%;">[[Version]]&nbsp;[[About]]</td>
+<td style="text-align:right; vertical-align:top;">[[EventStyleBtn]] [[TemplateButton]] [[ConfigurationButton]]</td>
+</tr>
+<tr><td>[[Load_iCal]]</td></tr>
+</table>
+[[TodayData]] <!-- (hidden) form post data containing date/page/name -->
+</form>
+<!-- Footer End -->

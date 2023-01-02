@@ -1,0 +1,25 @@
+Name: README
+Package: MultiPages extension
+Version: 0.0.1
+Author: Peter Gostelow
+Email: gostelow@global.co.za
+Website: http://www.mediawiki.org/w/index.php/Extension:MultiPages
+
+This is a beta version and has no usage instructions.
+
+INSTALL
+
+The short version is:
+
+$ cd <mediawikipath>/extensions
+$ tar xjf <downloadpath>/multipages.tbz2
+
+In LocalSettings.php file add the line:
+require_once("extensions/MultiPages/MultiPages.php");
+
+You should have two special pages in Special:SpecialPages under
+'Other special pages'
+Multiple page delete
+Multiple page move
+
+Enjoy!

@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 60
+archive*
+deleted*
+math*
+temp*
+thumb*
+timeline*
+tmp*
+temp*
+?
+
+END
